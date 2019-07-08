@@ -106,8 +106,6 @@ terraform plan
 terraform apply
 ```
 
-[![asciicast](https://asciinema.org/a/195490.png)](https://asciinema.org/a/195490)
-
 * To check what terraform deployed use
 
 ```sh
