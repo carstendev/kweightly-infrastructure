@@ -72,3 +72,8 @@ resource "google_sql_user" "user" {
   name     = "${var.sql_user}"
   password = "${var.sql_pass}"
 }
+
+resource "google_sql_database" "users" {
+  name      = "kweightly_db"
+  instance  = "${google_sql_database_instance.master.name}"
+}
