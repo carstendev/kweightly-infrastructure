@@ -18,6 +18,9 @@ spec:
           ports:
             - containerPort: 9002
             - containerPort: 9003
+          envFrom:
+            - configMapRef:
+                name: kweightly-env
 
 ---
 apiVersion: v1
