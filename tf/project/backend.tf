@@ -2,6 +2,6 @@
 terraform {
   backend "gcs" {
     bucket = "carstendev-de"
-    prefix = "terraform-project"
+    prefix = "terraform"
   }
 }

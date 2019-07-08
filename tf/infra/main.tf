@@ -6,7 +6,7 @@ data "terraform_remote_state" "remote_state" {
 
   config = {
     bucket = "${var.bucket_name}"
-    prefix = "terraform" //TODO: new code uses -project here
+    prefix = "terraform"
   }
 }
 
@@ -23,13 +23,13 @@ module "vpc" {
 module "subnet" {
   source      = "./network/subnet"
   region      = "${var.region}"
-  vpc_name     = "${module.vpc.vpc_name}"
+  vpc_name    = "${module.vpc.vpc_name}"
   subnet_cidr = "${var.subnet_cidr}"
 }
 
 module "firewall" {
   source        = "./network/firewall"
-  vpc_name       = "${module.vpc.vpc_name}"
+  vpc_name      = "${module.vpc.vpc_name}"
   ip_cidr_range = "${module.subnet.ip_cidr_range}"
 }
 
