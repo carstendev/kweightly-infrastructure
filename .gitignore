@@ -4,10 +4,9 @@
 build/
 out/
 .DS_Store
-local.properties
-lambda.properties
 *.tfstate
 *.tfstate.backup
 *.tfvars
 .terraform
 tfplan
+.properties
