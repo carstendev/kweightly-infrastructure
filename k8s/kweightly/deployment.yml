@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kweightly
-          image: carstendev/kweightly:27a8c1d13be8e332a4829f916ee333acce6323f3
+          image: carstendev/kweightly:9950f71ac3243962a47a1ee98dd747b323a3b4f4
           ports:
             - containerPort: 9002
             - containerPort: 9003
