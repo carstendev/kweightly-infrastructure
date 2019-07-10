@@ -14,7 +14,12 @@ spec:
     spec:
       containers:
         - name: kweightly
-          image: carstendev/kweightly:9950f71ac3243962a47a1ee98dd747b323a3b4f4
+          image: carstendev/kweightly:14470b6d0d35806d8f924bb543cc1ff877cbb0a0
+          resources:
+            requests:
+              memory: "128Mi"
+            limits:
+              memory: "512Mi"
           ports:
             - containerPort: 9002
             - containerPort: 9003
