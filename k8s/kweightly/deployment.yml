@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kweightly
-          image: carstendev/kweightly:14470b6d0d35806d8f924bb543cc1ff877cbb0a0
+          image: carstendev/kweightly:d6d14f09eb4870f239523e4c6739bc5aa4e038a0
           resources:
             requests:
               memory: "128Mi"
