@@ -15,6 +15,18 @@ spec:
       containers:
         - name: kweightly
           image: carstendev/kweightly:d6d14f09eb4870f239523e4c6739bc5aa4e038a0
+          readinessProbe:
+            httpGet:
+              port: 9003
+              path: /readiness
+            initialDelaySeconds: 30
+            periodSeconds: 30
+          livenessProbe:
+            httpGet:
+              port: 9003
+              path: /liveness
+            initialDelaySeconds: 30
+            periodSeconds: 30
           resources:
             requests:
               memory: "128Mi"
