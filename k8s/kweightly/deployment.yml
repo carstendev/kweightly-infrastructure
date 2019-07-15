@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kweightly
-          image: carstendev/kweightly:d6d14f09eb4870f239523e4c6739bc5aa4e038a0
+          image: carstendev/kweightly:76a1ace142894881bc10e40e7f320e16e2f5ff19
           readinessProbe:
             httpGet:
               port: 9003
@@ -31,7 +31,7 @@ spec:
             requests:
               memory: "128Mi"
             limits:
-              memory: "512Mi"
+              memory: "256Mi"
           ports:
             - containerPort: 9002
             - containerPort: 9003
